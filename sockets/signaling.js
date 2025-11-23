@@ -11,21 +11,21 @@ module.exports = (io) => {
 
       socket.join(meetingId);
 
-      // send all existing peers to the new peer
+      // Send all existing peers to the new peer
       const existingUsers = Object.entries(rooms[meetingId])
         .filter(([id]) => id !== socket.id)
         .map(([id, n]) => ({ socketId: id, name: n }));
 
       socket.emit("existing-users", existingUsers);
 
-      // notify others new user joined
+      // Notify others new user joined
       socket.to(meetingId).emit("user-joined", {
         socketId: socket.id,
         name
       });
     });
 
-    // route offer/answer/ice to specific peer
+    // Route offer/answer/ice to specific peer
     socket.on("offer", ({ target, offer }) => {
       io.to(target).emit("offer", { offer, from: socket.id });
     });
@@ -53,6 +53,7 @@ module.exports = (io) => {
           break;
         }
       }
+
       console.log("User disconnected:", socket.id);
     });
   });

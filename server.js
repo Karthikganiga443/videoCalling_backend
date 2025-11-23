@@ -3,11 +3,13 @@ const http = require("http");
 const { Server } = require("socket.io");
 const connectDB = require("./config/db");
 const app = require("./app");
-
+app.use(cors({ origin: "*" }));
 connectDB();
 
 const server = http.createServer(app);
-const io = new Server(server, { cors: { origin: "*" } });
+const io = new Server(server, {
+  cors: { origin: "*" }
+});
 
 require("./sockets/signaling")(io);
 

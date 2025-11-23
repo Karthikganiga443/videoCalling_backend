@@ -15,7 +15,6 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
-    "mediasoup": "^3.19.11",
     "mongoose": "^9.0.0",
     "nanoid": "^5.1.6",
     "socket.io": "^4.8.1"

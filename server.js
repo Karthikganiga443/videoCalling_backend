@@ -1,0 +1,15 @@
+require("dotenv").config();
+const http = require("http");
+const { Server } = require("socket.io");
+const connectDB = require("./config/db");
+const app = require("./app");
+
+connectDB();
+
+const server = http.createServer(app);
+const io = new Server(server, { cors: { origin: "*" } });
+
+require("./sockets/signaling")(io);
+
+const PORT = 5000;
+server.listen(PORT, () => console.log("Server running on", PORT));

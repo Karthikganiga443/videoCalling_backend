@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: process.env.FRONTEND_ORIGIN,
+    origin:"https://video-calling-frontend-kappa.vercel.app/",
     methods: ["GET", "POST"],
     credentials: true
   }
@@ -18,5 +18,5 @@ const io = new Server(server, {
 
 require("./sockets/signaling")(io);
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 server.listen(PORT, () => console.log(`Server running on ${PORT}`));

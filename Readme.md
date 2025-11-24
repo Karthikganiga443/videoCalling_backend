@@ -24,7 +24,7 @@ It handles meeting creation, signaling, and SFU-based media routing.
 - **Nodemon** (development)
 
 ---
-
+```
 ## 📁 Project Structure
 
 videoCalling_backend/
@@ -42,5 +42,5 @@ videoCalling_backend/
 │ └─ sfuRoom.js
 ├─ app.js
 └─ server.js
-
+```
 ---

@@ -5,6 +5,12 @@ It handles meeting creation, signaling, and SFU-based media routing.
 
 ---
 
+## 🚀 Live Demo  
+Frontend: https://video-calling-frontend-kappa.vercel.app/  
+Backend API: https://videocalling-backend-c85u.onrender.com
+
+---
+
 ## ⭐ Features
 - Create & manage meeting rooms  
 - Real-time signaling with **Socket.IO**  

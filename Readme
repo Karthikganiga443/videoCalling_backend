@@ -5,27 +5,27 @@ It handles meeting creation, signaling, and SFU-based media routing.
 
 ---
 
-## Features
+## ⭐ Features
 - Create & manage meeting rooms  
-- Real-time signaling with Socket.IO  
-- WebRTC SFU media routing (mediasoup-style architecture)  
+- Real-time signaling with **Socket.IO**  
+- WebRTC **SFU-style media routing** (mediasoup-ready architecture)  
 - MongoDB for meeting persistence  
 - Express REST API  
 - CORS support for frontend integration  
 
 ---
 
-## Tech Stack
-- Node.js  
-- Express  
-- Socket.IO  
-- MongoDB + Mongoose  
-- Mediasoup-based SFU  
-- Nodemon (development)
+## 🛠 Tech Stack
+- **Node.js**  
+- **Express**  
+- **Socket.IO**  
+- **MongoDB + Mongoose**  
+- **Mediasoup-based SFU**  
+- **Nodemon** (development)
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 videoCalling_backend/
 ├─ config/

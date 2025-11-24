@@ -24,9 +24,9 @@ It handles meeting creation, signaling, and SFU-based media routing.
 - **Nodemon** (development)
 
 ---
-```
-## 📁 Project Structure
 
+## 📁 Project Structure
+```
 videoCalling_backend/
 ├─ config/
 │ ├─ db.js
